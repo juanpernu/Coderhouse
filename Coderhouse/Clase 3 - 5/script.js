@@ -17,15 +17,17 @@ function addStudent() {
 
 function maradona(studentArray) {
 
-	if (studentArray.indexOf('MARADONA') !== -1) {
-		console.log('Maradona is in da house');
-	} else {
-		console.log('Maradona se rateo!');
-	}
+  for (var i = 0; i < studentArray.length; i++) {
+    if (studentArray[i] == 'MARADONA') {
+      return true;
+    }
 
-	console.log('Los alumnos presentes son: ' + studentList);
-	console.log('Hoy vinieron ' + studentList.length + ' alumnos.');
+    return false;
+
+  }
+
 }
 
 addStudent();
-maradona(studentList);
+console.log(studentList);
+var vinoMaradona = maradona(studentList);
